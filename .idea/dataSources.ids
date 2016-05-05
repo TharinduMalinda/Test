@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - malinda@localhost" uuid="cb992925-8edb-4878-8550-068c10b47d7c">
+    <database-info product="MySQL" version="5.6.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="malinda"/>
+    <table name="biat_details" schema="" catalog="malinda" type="TABLE">
+      <column name="g" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="gt" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="trh" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="erg" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="contact" schema="" catalog="malinda" type="TABLE">
+      <column name="name" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="massege" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+    </table>
+    <table name="device" schema="" catalog="malinda" type="TABLE">
+      <column name="rbv" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="bea" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="bvab" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="arbbr" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="images_tbl" schema="" catalog="malinda" type="TABLE">
+      <column name="image_id" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="images_path" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="submission_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="approve" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12" def="J25vJw=="/>
+      <primary-key name="PRIMARY" columns="image_id"/>
+    </table>
+    <table name="path" schema="" catalog="malinda" type="TABLE">
+      <column name="q" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="qw" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="a" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="w" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="aw" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ww" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="points" schema="" catalog="malinda" type="TABLE">
+      <column name="userid" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="lastpointdate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="pointrate" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
+      <column name="points" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
+      <column name="lastgriddate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="userid"/>
+    </table>
+    <table name="referal" schema="" catalog="malinda" type="TABLE">
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="referal&apos;s_userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="referal&apos;s_username" sqlType="VARCHAR" precision="180" scale="0" nullable="false" jdbcType="12"/>
+      <column name="referal&apos;s_email" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="referal&apos;s_regdate" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+    </table>
+    <table name="reload" schema="" catalog="malinda" type="TABLE">
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="reload_id" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="reload_date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="reload_amount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="state" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="proof_upload" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="aprove_date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="userid"/>
+    </table>
+    <table name="user" schema="" catalog="malinda" type="TABLE">
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="90" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="first_name" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="VARCHAR" precision="90" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile_no" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="network" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="signup_date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="total_reload" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="referal" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="q_points" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7" def="MA=="/>
+      <column name="q_play" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="J25vJw=="/>
+      <primary-key name="PRIMARY" columns="userid"/>
+    </table>
+  </data-source>
+</component>
